@@ -1,0 +1,88 @@
+/*===================================
+             HEADER
+===================================*/
+.header{
+  &__links{
+    color: $color-black;
+  }
+}
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  color: $color-black;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  color: black;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+header ul {
+  list-style: none;
+}
+link{
+  color: black;
+}
+header {
+   
+  background: #fff;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+}
+
+header .logo {
+  color: $color-black;
+  flex-grow: 1;
+  height: 22px;
+ 
+}
+
+header .logo span
+ {
+   
+  background: url('/images/logo.png') no-repeat;
+  display: inline-block;
+  width: 58px;
+  height: 24px;
+}
+
+// top intro
+
+.header-box {
+  background-image: url(../../img/frontpic.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  &__container {
+    max-height: 300px;
+    max-width: 400px;
+    background-color: rgba(0, 4, 1, 0.2);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__heading {
+    font-size: 4rem;
+    color: $color-white;
+  }
+  &__button {
+    padding-top: 15rem;
+  }
+}
+
+a{
+  color: $color-black;
+}
+
+
