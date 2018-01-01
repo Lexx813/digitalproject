@@ -19,7 +19,10 @@ a {
 
 
 header {
-  color: black;
+ position: fixed;
+ z-index: 100;
+ width: 100%;
+  color: $color-black;
   border-bottom: 1px solid #e2e2e2;
 }
 

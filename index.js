@@ -29,6 +29,7 @@ app.use(
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
+require('./routes/apiRoute')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets

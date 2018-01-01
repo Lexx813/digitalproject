@@ -214,7 +214,10 @@ a {
   text-decoration: none; }
 
 header {
-  color: black;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  color: #000;
   border-bottom: 1px solid #e2e2e2; }
 
 header ul li {
