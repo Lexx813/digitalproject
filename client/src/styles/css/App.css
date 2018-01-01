@@ -213,6 +213,9 @@ body {
 a {
   text-decoration: none; }
 
+ul {
+  padding-right: 2.0rem; }
+
 header {
   position: fixed;
   z-index: 100;
@@ -223,7 +226,7 @@ header {
 header ul li {
   list-style: none;
   display: inline-block;
-  padding: 0.5rem; }
+  padding: 0.8rem; }
 
 link {
   color: black; }
