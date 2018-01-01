@@ -36,7 +36,10 @@ class Header extends Component{
 
       <nav>
      <ul className="header__links">
-    
+     <li>Home</li>
+     <li>About</li>
+     <li>Services</li>
+     <li>Contact</li>
        {this.renderContent()}
  
      </ul>

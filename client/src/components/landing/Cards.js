@@ -3,7 +3,7 @@ import React from 'react'
 
 const Cards = () => {
   return(
-    <div>
+    <div className="card-box">
        <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
                         Most popular packages

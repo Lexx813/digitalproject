@@ -1,3 +1,7 @@
+.card-box{
+    background-color: $color-grey-light-1;
+}
+
 .card {
 
     // FUNCTIONALITY
@@ -27,15 +31,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, $dark-grey, $baby-blue);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $dark-grey, $color-primary-dark);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $dark-grey, $color-red);
             }
         }
     }
@@ -61,17 +65,17 @@
         border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            background-image: linear-gradient(to right bottom, $dark-grey, $baby-blue),
             url();
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            background-image: linear-gradient(to right bottom, $dark-grey, $color-primary-dark), 
             url();
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            background-image: linear-gradient(to right bottom, $dark-grey, $color-red), 
             url();
         }
     }
@@ -96,20 +100,20 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, .85), 
-            rgba($color-secondary-dark, .85));
+            rgba($dark-grey, .85), 
+            rgba($baby-blue, .85));
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light, .85), 
+            rgba($dark-grey, .85), 
             rgba($color-primary-dark, .85));
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85));
+            rgba($dark-grey, .85), 
+            rgba($color-red, .85));
         }
     }
 

@@ -17,13 +17,16 @@ a {
   text-decoration: none;
 }
 
+
 header {
   color: black;
   border-bottom: 1px solid #e2e2e2;
 }
 
-header ul {
+header ul li {
   list-style: none;
+  display: inline-block;
+  padding: 0.5rem;
 }
 link{
   color: black;
@@ -68,7 +71,7 @@ header .logo span
   &__container {
     max-height: 300px;
     max-width: 400px;
-    background-color: rgba(0, 4, 1, 0.2);
+    background-color: rgba(0, 4, 1, 0.8);
     margin-right: auto;
     margin-left: auto;
   }
