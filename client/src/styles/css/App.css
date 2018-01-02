@@ -234,7 +234,7 @@ link {
 header {
   background: #fff;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   font-family: 'Fjalla One', sans-serif;
   font-size: 2rem; }
 
@@ -518,3 +518,7 @@ footer {
         margin-bottom: 3rem; }
       .card__price-value {
         font-size: 4rem; } }
+
+.cta-container {
+  height: 500px;
+  background-color: #f7f7f7; }
