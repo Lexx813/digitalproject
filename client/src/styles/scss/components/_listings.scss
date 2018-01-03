@@ -1,0 +1,15 @@
+.listings {
+  text-align: center;
+   &__box {
+     padding: 5rem;
+     display: flex;
+     justify-content: space-between;
+   }
+
+    &__icon{
+ 
+  font-size: 10rem;
+  color: $color-black;
+    
+    }
+}

@@ -519,6 +519,12 @@ footer {
       .card__price-value {
         font-size: 4rem; } }
 
-.cta-container {
-  padding: 3rem;
-  background-color: #f7f7f7; }
+.listings {
+  text-align: center; }
+  .listings__box {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between; }
+  .listings__icon {
+    font-size: 10rem;
+    color: #000; }

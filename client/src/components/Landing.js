@@ -3,7 +3,7 @@ import React from 'react';
 import IntroTop from './landing/IntroTop';
 import Feature from './landing/Feature';
 import Cards from './landing/Cards';
-import Cta from './landing/Cta';
+import Listings from './landing/Listings';
 
 
 
@@ -12,7 +12,7 @@ const Landing = () => {
 
    <div>
      <IntroTop/>
-     <Cta />
+     <Listings />
      <Feature/>
      <Cards/>
    </div> 

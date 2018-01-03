@@ -7,7 +7,9 @@ const IntroTop = () => {
   return(
     <div className="header-box"> 
     <div className="header-box__container">
-    <h1 className="header-box__heading">{heading}</h1>
+       <h1 className = "header-box__heading heading-primary" > 
+       {heading}      
+       </h1>
     </div>
     <div className="header-box__button">
     <button className = "btn btn--white" > Start Now </button>
