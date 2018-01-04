@@ -1,7 +1,10 @@
 {
-  "main.css": "static/css/main.31d9407c.css",
-  "main.css.map": "static/css/main.31d9407c.css.map",
-  "main.js": "static/js/main.26221c65.js",
-  "main.js.map": "static/js/main.26221c65.js.map",
+  "main.css": "static/css/main.2a7f026d.css",
+  "main.css.map": "static/css/main.2a7f026d.css.map",
+  "main.js": "static/js/main.11db7969.js",
+  "main.js.map": "static/js/main.11db7969.js.map",
+  "static\\media\\book1.jpg": "static/media/book1.b230e875.jpg",
+  "static\\media\\book2.jpg": "static/media/book2.4169c2f6.jpg",
+  "static\\media\\book3.jpg": "static/media/book3.5f4de241.jpg",
   "static\\media\\frontpic.jpg": "static/media/frontpic.fb1dfca6.jpg"
 }

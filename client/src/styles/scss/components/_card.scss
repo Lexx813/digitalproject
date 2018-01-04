@@ -66,17 +66,17 @@
         
         &--1 {
             background-image: linear-gradient(to right bottom, $dark-grey, $baby-blue),
-            url();
+            url(../../img/book/book1.jpg);
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $dark-grey, $color-primary-dark), 
-            url();
+            url(../../img/book/book2.jpg);
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $dark-grey, $color-red), 
-            url();
+            url(../../img/book/book3.jpg);
         }
     }
 

@@ -41,6 +41,7 @@ class Header extends Component{
      <li className="header__group--item">Home</li>
      <li className="header__group--item">About</li>
      <li className="header__group--item">Services</li>
+     <li className="header__group--item">Blog</li>
      <li className="header__group--item">Contact</li>
        {this.renderContent()}
  
