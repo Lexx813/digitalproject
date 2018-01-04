@@ -201,7 +201,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 /*===================================
-             HEADER
+             HEADER NAVBAR
 ===================================*/
 .header {
   color: #000;
@@ -210,10 +210,9 @@ body {
   font-size: 1.5rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--line);
   display: flex;
   align-items: center;
-  box-shadow: 1px 2px 3px 4px #000;
+  box-shadow: 1px 1px 1px 0.5px #000;
   z-index: 100;
   width: 100%;
   justify-content: space-between; }
@@ -256,8 +255,16 @@ footer {
 /*===================================
              INTRO TOP
 ===================================*/
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden; }
+
 .header-box {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/frontpic.jpg);
   height: 600px;
   width: 100%;
   background-size: cover !important;

@@ -1,9 +1,18 @@
 /*===================================
              INTRO TOP
 ===================================*/
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
 
 .header-box {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/frontpic.jpg);
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/frontpic.jpg);
     height: 600px;
     width: 100%;
     background-size: cover !important;

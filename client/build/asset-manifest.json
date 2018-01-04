@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.2a7f026d.css",
-  "main.css.map": "static/css/main.2a7f026d.css.map",
-  "main.js": "static/js/main.11db7969.js",
-  "main.js.map": "static/js/main.11db7969.js.map",
+  "main.css": "static/css/main.e90c90de.css",
+  "main.css.map": "static/css/main.e90c90de.css.map",
+  "main.js": "static/js/main.bbdb8caa.js",
+  "main.js.map": "static/js/main.bbdb8caa.js.map",
+  "static\\media\\Love-Coding.mp4": "static/media/Love-Coding.5683999a.mp4",
+  "static\\media\\Love-Coding.webm": "static/media/Love-Coding.2574f75c.webm",
   "static\\media\\book1.jpg": "static/media/book1.b230e875.jpg",
   "static\\media\\book2.jpg": "static/media/book2.4169c2f6.jpg",
-  "static\\media\\book3.jpg": "static/media/book3.5f4de241.jpg",
-  "static\\media\\frontpic.jpg": "static/media/frontpic.fb1dfca6.jpg"
+  "static\\media\\book3.jpg": "static/media/book3.5f4de241.jpg"
 }

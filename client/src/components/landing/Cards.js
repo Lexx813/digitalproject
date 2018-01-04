@@ -18,7 +18,7 @@ const Cards = () => {
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--1">The Simple package</span>
+                                    <span className="card__heading-span card__heading-span--1">The basic package</span>
                                 </h4>
                                 <div className="card__details">
                                     <ul>
@@ -50,7 +50,7 @@ const Cards = () => {
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--2">The </span>
+                                    <span className="card__heading-span card__heading-span--2">The premium package </span>
                                 </h4>
                                 <div className="card__details">
                                     <ul>
@@ -83,7 +83,7 @@ const Cards = () => {
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--3">The package</span>
+                                    <span className="card__heading-span card__heading-span--3">The supreme package</span>
                                 </h4>
                                 <div className="card__details">
                                     <ul>
