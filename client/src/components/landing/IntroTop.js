@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const IntroTop = () => {
-  const heading = 'Lex Digital';
+  const heading = ' Digital';
   return(
 < div className = "header-box heading-primary" >
     <div className="header-box__container">

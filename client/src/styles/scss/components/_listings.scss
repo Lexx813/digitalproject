@@ -1,7 +1,7 @@
 .listings {
   background-color: $color-grey-light-2;
   text-align: center;
-  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.6);
+
   &__box {
     padding-bottom: 2rem;
     display: flex;
@@ -11,6 +11,10 @@
   &__icon {
     font-size: 6rem;
     color: $color-black;
+    transition: transform .3s;
+     &:hover {
+       transform: translateY(-1.5rem) scale(1.03);
+     }
   }
   p{
     padding-top: 1rem;

@@ -10,13 +10,13 @@ class Header extends Component{
      case null:
      return;
      case false:
-     return <li ><a  href="/auth/google">Login</a></li>;
+     return <li className="header__group--item"  ><a  href="/auth/google">Login</a></li>;
      default:
      return[
       
       // <li key="1"><Payments /></li>,
       // <li key="3" style={{margin: '0 10px'}}>Credits: {this.props.auth.credits}</li>, 
-       <li key="2" ><a  href="/api/logout">Logout</a></li>
+       <li key="2"className="header__group--item" ><a  href="/api/logout">Logout</a></li>
      ];
    }
  }
@@ -26,26 +26,27 @@ class Header extends Component{
  render() {
   return (
    <header className="header" id="header">
-   <div className="container">
+   
    <h1> <Link 
     to={this.props.auth ? '/surveys' : '/'} 
-    className="logo" 
+    className="header__logo" 
     >
     LOGO
-    </Link></h1> 
+    </Link>
+    </h1> 
   
 
-      <nav id="nav">
-     <ul className="header__links">
-     <li>Home</li>
-     <li>About</li>
-     <li>Services</li>
-     <li>Contact</li>
+     <nav id="nav">
+     <ul className="header__group">
+     <li className="header__group--item">Home</li>
+     <li className="header__group--item">About</li>
+     <li className="header__group--item">Services</li>
+     <li className="header__group--item">Contact</li>
        {this.renderContent()}
  
      </ul>
 </nav>
-    </div>
+    
    </header>
   );
  }

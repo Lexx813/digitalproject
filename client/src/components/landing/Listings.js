@@ -13,11 +13,14 @@ const  Listings = () => {
     <Fade delay={500} duration={6000}>
       <div className="row listings__box">
        <i className="fa fa-facebook-official listings__icon" aria-hidden="true"></i>
+       <i className="fa fa-twitter listings__icon" aria-hidden="true"></i>
        <i className="fa fa-yelp listings__icon" aria-hidden="true"></i>
        <i className="fa fa-google listings__icon" aria-hidden="true"></i>
        <i className="fa fa-instagram listings__icon" aria-hidden="true"></i>
        <i className="fa fa-snapchat listings__icon" aria-hidden="true"></i>
        <i className="fa fa-youtube listings__icon" aria-hidden="true"></i>
+       <i className="fa fa-pinterest listings__icon" aria-hidden="true"></i>
+       <i className="fa fa-tumblr listings__icon" aria-hidden="true"></i>
        </div>
        </Fade>
       </div>
