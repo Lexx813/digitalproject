@@ -1,15 +1,20 @@
 .listings {
+  background-color: $color-grey-light-2;
   text-align: center;
-   &__box {
-     padding: 5rem;
-     display: flex;
-     justify-content: space-between;
-   }
-
-    &__icon{
- 
-  font-size: 10rem;
-  color: $color-black;
-    
-    }
+  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.6);
+  &__box {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    backface-visibility: hidden;
+  }
+  &__icon {
+    font-size: 6rem;
+    color: $color-black;
+  }
+  p{
+    padding-top: 1rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
 }

@@ -14,8 +14,9 @@ body {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+   
     &--main {
+        padding-top: 10rem;
         display: block;
         font-size: 6rem;
         font-weight: 400;
@@ -33,10 +34,11 @@ body {
         */
     }
     &--sub {
+        padding: 1.5rem;
         display: block;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 700;
-        letter-spacing: 1.75rem;
+        letter-spacing: 1.50rem;
         animation: moveInRight 1s ease-out;
         @include respond(phone) {
             letter-spacing: .5rem;
@@ -45,6 +47,7 @@ body {
 }
 
 .heading-secondary {
+    padding-top: 1rem;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;

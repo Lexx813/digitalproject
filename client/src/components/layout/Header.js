@@ -25,16 +25,17 @@ class Header extends Component{
 
  render() {
   return (
-   <header className="header">
-   <div className="flexbox-container">
-    <Link 
+   <header className="header" id="header">
+   <div className="container">
+   <h1> <Link 
     to={this.props.auth ? '/surveys' : '/'} 
     className="logo" 
     >
     LOGO
-    </Link>
+    </Link></h1> 
+  
 
-      <nav>
+      <nav id="nav">
      <ul className="header__links">
      <li>Home</li>
      <li>About</li>

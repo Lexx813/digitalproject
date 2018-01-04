@@ -1,7 +1,7 @@
 module.exports = {
     googleClientID: '63783586273-hrjoj1a7co7fb9mge6evhoh57caqmmrg.apps.googleusercontent.com',
     googleClientSecret: 'dIpQ_S8QNKUzQKOwJ4hbtrHv',
-    mongoURI: 'mongodb://laqdev:password@ds135963.mlab.com:35963/emaily',
+    mongoURI: 'mongodb://localhost/digitalproject',
     cookieKey: 'ieufbuiebwuiwbefiewofiwefbweiufbifee',
     stripePublishableKey: 'pk_test_kebHchHkAA0o16jIWO7VTCYe',
     stripeSecretKey: 'sk_test_rhSjh2KemhZCSNNiVDdBBRGP',
