@@ -22,7 +22,7 @@ const IntroTop = () => {
     </p>
     </div>
     <div className="header-box__button">
-    <button className = "btn btn--white" > Start Now </button>
+        <button className = "btn btn--white" > Start Now </button>
     </div>
     </div>
   )
