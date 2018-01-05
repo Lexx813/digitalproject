@@ -9,6 +9,13 @@ import Footer from '../components/layout/Footer';
 import Dashboard from './Dashboard'
 import SurveyNew from './surveys/SurveyNew';
 
+// PAGES
+
+import AboutPage from './pages/AboutPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
+import ServicesPage from './pages/ServicesPage';
+
 
 class App extends Component {
   componentDidMount() {
@@ -22,7 +29,11 @@ class App extends Component {
           <div className="container">
             <Header/>
             <Route exact path="/" component={Landing}/>
-            <Route exact path="/surveys" component={Dashboard}/>
+            <Route exact path="/dashboard" component={Dashboard}/>
+            <Route exact path="/about" component={AboutPage}/>
+            <Route exact path="/services" component={ServicesPage}/>
+            <Route exact path="/blog" component={BlogPage}/>
+            <Route exact path="/contact" component={ContactPage}/>
             <Route path="/surveys/new" component={SurveyNew}/>
             <Footer/>
           </div>

@@ -228,6 +228,9 @@ body {
   .header a {
     color: #000;
     text-decoration: none; }
+  .header a:hover {
+    color: red;
+    border-bottom: 1px solid #000; }
 
 /*===================================
              FOOTER
@@ -255,16 +258,8 @@ footer {
 /*===================================
              INTRO TOP
 ===================================*/
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  overflow: hidden; }
-
 .header-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/frontpic.jpg);
   height: 600px;
   width: 100%;
   background-size: cover !important;
@@ -582,3 +577,17 @@ footer {
     padding-top: 1rem;
     font-size: 2rem;
     padding-bottom: 3rem; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }

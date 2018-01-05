@@ -28,7 +28,7 @@ class Header extends Component{
    <header className="header" id="header">
    
    <h1> <Link 
-    to={this.props.auth ? '/surveys' : '/'} 
+    to={this.props.auth ? '/dashboard' : '/'} 
     className="header__logo" 
     >
     LOGO
@@ -38,11 +38,11 @@ class Header extends Component{
 
      <nav id="nav">
      <ul className="header__group">
-     <li className="header__group--item">Home</li>
-     <li className="header__group--item">About</li>
-     <li className="header__group--item">Services</li>
-     <li className="header__group--item">Blog</li>
-     <li className="header__group--item">Contact</li>
+     <li className="header__group--item"><Link to='/'>Home </Link></li>
+     <li className="header__group--item"><Link to='/about'>About </Link></li>
+     <li className="header__group--item"><Link to='/services'>Services </Link></li>
+     <li className="header__group--item"><Link to='/blog'>Blog </Link></li>
+     <li className="header__group--item"><Link to='/contact'> Contact</Link></li>
        {this.renderContent()}
  
      </ul>
