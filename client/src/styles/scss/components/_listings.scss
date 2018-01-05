@@ -1,5 +1,8 @@
 .listings {
-  background-color: $color-grey-light-2;
+  top: 0;
+  left: 0;
+  height: 200%;
+  // background-color: $color-grey-light-2;
   text-align: center;
 
   &__box {
@@ -13,6 +16,7 @@
     color: $color-black;
     transition: transform .3s;
      &:hover {
+       color: $color-red;
        transform: translateY(-1.5rem) scale(1.03);
      }
   }

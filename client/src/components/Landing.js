@@ -4,18 +4,19 @@ import IntroTop from './landing/IntroTop';
 import Feature from './landing/Feature';
 import Cards from './landing/Cards';
 import Listings from './landing/Listings';
-import Video from './landing/Video';
+import WhatWeDo from './landing/WhatWeDo';
+// import Video from './landing/Video';
 
 
 const Landing = () => {
  return(
 
    <div>
-     <IntroTop/>
+     <IntroTop />
      <Listings />
-     <Video/>
-     <Feature/>
-     <Cards/>
+     <WhatWeDo />
+     <Feature />
+     <Cards />
    </div> 
 
 );

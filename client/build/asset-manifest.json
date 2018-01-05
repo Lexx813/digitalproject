@@ -1,12 +1,13 @@
 {
-  "main.css": "static/css/main.186c6638.css",
-  "main.css.map": "static/css/main.186c6638.css.map",
-  "main.js": "static/js/main.f4564927.js",
-  "main.js.map": "static/js/main.f4564927.js.map",
-  "static\\media\\Working-Space.mp4": "static/media/Working-Space.bd5663b3.mp4",
-  "static\\media\\Working-Space.webm": "static/media/Working-Space.10a0b609.webm",
+  "main.css": "static/css/main.f0aa250e.css",
+  "main.css.map": "static/css/main.f0aa250e.css.map",
+  "main.js": "static/js/main.d8fe59da.js",
+  "main.js.map": "static/js/main.d8fe59da.js.map",
+  "static\\media\\SEO.jpg": "static/media/SEO.4ed6756c.jpg",
   "static\\media\\book1.jpg": "static/media/book1.b230e875.jpg",
   "static\\media\\book2.jpg": "static/media/book2.4169c2f6.jpg",
   "static\\media\\book3.jpg": "static/media/book3.5f4de241.jpg",
-  "static\\media\\frontpic.jpg": "static/media/frontpic.fb1dfca6.jpg"
+  "static\\media\\frontpic.jpg": "static/media/frontpic.fb1dfca6.jpg",
+  "static\\media\\marketing.jpg": "static/media/marketing.15411490.jpg",
+  "static\\media\\website.jpg": "static/media/website.7e423747.jpg"
 }
