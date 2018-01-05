@@ -279,7 +279,6 @@ footer {
     padding-top: 15rem; }
 
 .section-about {
-  background-color: #eee;
   padding: 15rem 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
@@ -336,9 +335,6 @@ footer {
     @media only screen and (max-width: 56.25em) {
       .order__form {
         width: 100%; } }
-
-.section-features {
-  margin: 5rem; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -434,6 +430,7 @@ footer {
   transform: translateY(0); }
 
 .card-box {
+  padding-top: 2rem;
   background-color: #f7f7f7; }
 
 .card {
@@ -565,7 +562,7 @@ footer {
   height: 200%;
   text-align: center; }
   .listings__box {
-    padding-bottom: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     backface-visibility: hidden; }
