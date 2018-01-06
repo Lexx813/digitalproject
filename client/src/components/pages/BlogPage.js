@@ -1,9 +1,10 @@
 import React from 'react'
+import BlogList from '../blogs/BlogList';
 
 const BlogPage = () => {
   return (
     <div>
-      <h1>BLOG PAGE</h1>
+      <BlogList/>
     </div>
   )
 }
