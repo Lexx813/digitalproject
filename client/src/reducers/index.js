@@ -6,4 +6,4 @@ import blogsReducer from './blogsReducer';
 
 
 
-export default combineReducers({auth: authReducer, form: reduxForm, surveys: surveysReducer,blog:blogsReducer});
+export default combineReducers({auth: authReducer, form: reduxForm, surveys: surveysReducer,blogs:blogsReducer});

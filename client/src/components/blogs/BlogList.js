@@ -5,7 +5,7 @@ import {fetchBlogs} from '../../actions';
 class BLogList extends Component {
  componentWillMount(){
    this.props.fetchBlogs();
- 
+
  }
 
 renderBlogs(){
@@ -16,6 +16,7 @@ return this.props.blogs.map(blogs => {
     <p>{blogs.body}</p>
     <img src={blogs.image} alt="test"/>
     </div>
+    
   )
 })
 }
@@ -24,7 +25,7 @@ return this.props.blogs.map(blogs => {
   render() {
     return (
       <div>
-      {this.props.blogs.length && this.renderBlogs()}
+       {this.renderBlogs()}
       </div>
     );
   }
