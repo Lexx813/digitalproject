@@ -11,10 +11,10 @@ class BLogList extends Component {
 renderBlogs(){
 return this.props.blogs.map(blogs => {
   return(
-    <div className="container" key={blogs._id}>
-    <h2>{blogs.title}</h2>
-    <p>{blogs.body}</p>
-    <img src={blogs.image} alt="test"/>
+    <div className="bloglist" key={blogs._id}>
+      <img className="bloglist__img" src={blogs.image} alt="test"/>
+      <h2 className="bloglist__title">{blogs.title}</h2>
+      <p className="bloglist__body">{blogs.body}</p>
     </div>
     
   )
@@ -24,8 +24,13 @@ return this.props.blogs.map(blogs => {
 
   render() {
     return (
-      <div>
-       {this.renderBlogs()}
+      <div className="row">
+         <div className="col-2-of-4"> 
+         {this.props.blogs.image}
+         </div>
+         <div className="col-2-of-4"> 
+           {this.renderBlogs()}
+         </div>
       </div>
     );
   }

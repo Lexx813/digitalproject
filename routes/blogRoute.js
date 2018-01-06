@@ -8,7 +8,7 @@ module.exports = app =>{
 
 //---->>> POST BOOKS <<<-----
 
-app.post("/api/blogs", function (req, res) {
+app.post("/api/blogs",  (req, res) => {
   var blog = req.body;
   Blog.create(blog, function (err, blogs) {
     if (err) {
@@ -18,7 +18,7 @@ app.post("/api/blogs", function (req, res) {
   });
 });
 //----->>>> GET BOOKS <<<---------
-app.get("/api/blogs", function (req, res) {
+app.get("/api/blogs",  (req, res) => {
   Blog
     .find(function (err, blogs) {
       if (err) {

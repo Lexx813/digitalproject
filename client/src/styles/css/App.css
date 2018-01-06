@@ -260,7 +260,8 @@ footer {
 ===================================*/
 .header-box {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/frontpic.jpg);
-  height: 600px;
+  height: 90vh;
+  min-height: 600px;
   width: 100%;
   background-size: cover !important;
   background-position: center center !important;
@@ -638,3 +639,39 @@ footer {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.bloglist {
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 10rem; }
+  .bloglist__img {
+    width: 400px;
+    height: 300px; }
+
+/*===================================
+                SLIDER
+===================================*/
+.blog-slider {
+  height: 700px;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  font-family: 'Fjalla One'; }
+
+.blog-slider .caption {
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+  text-align: right;
+  width: 320px;
+  text-transform: uppercase; }
+
+.blog-slider h4 {
+  font-weight: 300;
+  margin: 0; }
+
+.blog-slider .caption p {
+  font-size: 70px;
+  margin-top: 0px; }
