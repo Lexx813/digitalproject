@@ -15,13 +15,11 @@ return this.props.blogs.map(blogs => {
       <img className="bloglist__img" src={blogs.image} alt="test"/>
       <h2 className="bloglist__title">{blogs.title}</h2>
       <p className="bloglist__body">{blogs.body}</p>
-    </div>
-    
+       <a href="/blogs/_id" className="btn-text">Learn more &rarr;</a>
+    </div> 
   )
 })
 }
-
-
   render() {
     return (
       <div className="row">
