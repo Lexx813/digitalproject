@@ -1,14 +1,23 @@
+//ABSTRACTS
 @import "./abstracts/functions";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
+//BASE
 @import "./base/animations";
 @import "./base/base";
 @import "./base/typography";
 @import "./base/utilities";
+
+//LAYOUT
 @import "./layout/grid";
 @import "./layout/_header";
 @import "./layout/_footer";
+
+//PAGES
 @import "./pages/_home";
+@import "./pages/_login";
+@import "./pages/_blog";
 
 
 //Components

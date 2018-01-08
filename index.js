@@ -27,6 +27,12 @@ app.use(
       keys: [keys.cookieKey]
     })
   );
+  //PASPORT CONFIG
+app.use(require("express-session")({
+    secret: "Once again Rusty wins cutest dog!",
+    resave: false,
+    saveUninitialized: false
+}));
 
   app.use(passport.initialize());
   app.use(passport.session());

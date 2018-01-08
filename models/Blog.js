@@ -3,14 +3,17 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 var blogSchema = new Schema({
-  googleId:'String',
   title: String,
   image: String,
   body: String,
   created: {
     type: Date,
     default: Date.now
-  }
+  },
+  _user : {
+  type: Schema.Types.ObjectId,
+  ref: 'User'
+}
 
 });
 

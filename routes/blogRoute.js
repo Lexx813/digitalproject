@@ -6,7 +6,7 @@ const requireLogin = require('../middlewares/requireLogin');
 
 module.exports = app =>{
 
-//---->>> POST BOOKS <<<-----
+//---->>> POST BLOGS <<<-----
 
 app.post("/api/blogs",  (req, res) => {
   var blog = req.body;
@@ -17,7 +17,7 @@ app.post("/api/blogs",  (req, res) => {
     res.json(blogs);
   });
 });
-//----->>>> GET BOOKS <<<---------
+//----->>>> GET BLOGS <<<---------
 app.get("/api/blogs",  (req, res) => {
   Blog
     .find(function (err, blogs) {
@@ -27,7 +27,10 @@ app.get("/api/blogs",  (req, res) => {
       res.json(blogs);
     });
 });
-//---->>> DELETE BOOKS <<<------
+
+//---->>> SHOW BY ID <<<----
+
+//---->>> DELETE BLOGS <<<------
 app.delete("/api/blogs/:_id", function (req, res) {
   var query = {
     _id: req.params._id
@@ -39,7 +42,7 @@ app.delete("/api/blogs/:_id", function (req, res) {
     res.json(blogs);
   });
 });
-//---->>> UPDATE BOOKS <<<------
+//---->>> UPDATE BLOGS <<<------
 app.put("/api/blogs/:_id", function (req, res) {
   var blog = req.body;
   var query = req.params._id;
@@ -63,7 +66,7 @@ app.put("/api/blogs/:_id", function (req, res) {
     res.json(blogs);
   });
 });
-// -->>> GET BOOKS IMAGES API <<<---
+// -->>> GET BLOGS IMAGES API <<<---
 app.get("/images", function (req, res) {
   const imgFolder = __dirname + "/client/src/img/";
   // REQUIRE FILE SYSTEM

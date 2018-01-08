@@ -8,6 +8,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Dashboard from './Dashboard'
 import SurveyNew from './surveys/SurveyNew';
+import LoginPage from '../components/pages/LoginPage';
 
 // PAGES
 
@@ -34,6 +35,7 @@ class App extends Component {
             <Route exact path="/services" component={ServicesPage}/>
             <Route exact path="/blog" component={BlogPage}/>
             <Route exact path="/contact" component={ContactPage}/>
+            <Route exact path="/login" component={LoginPage}/>
             <Route path="/surveys/new" component={SurveyNew}/>
             <Footer/>
           </div>

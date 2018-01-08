@@ -1,0 +1,22 @@
+.blog-box {
+
+  height: 90vh;
+  min-height: 600px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  &__container {
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__heading {
+    font-size: 4rem;
+    color: $color-white;
+  }
+
+}
