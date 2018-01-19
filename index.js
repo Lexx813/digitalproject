@@ -7,7 +7,7 @@ const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const expressSanitizer = require("express-sanitizer");
 require('./models/Blog');
-require('./models/Comments');
+require('./models/comments');
 require('./models/User'); 
 require('./models/Survey');
 require('./services/passport');

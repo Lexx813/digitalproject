@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Blog = require('../models/Blog');
+const Comment = require("../models/comments");
 const requireLogin = require('../middlewares/requireLogin');
 
 

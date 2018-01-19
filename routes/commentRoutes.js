@@ -1,6 +1,6 @@
 const express = require("express");
 const Blog = require("../models/Blog");
-const Comment = require("../models/Comments");
+const Comment = require("../models/comments");
 const middleware = require("../middlewares");
 
 
