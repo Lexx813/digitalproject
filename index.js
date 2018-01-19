@@ -10,6 +10,9 @@ require('./models/Blog');
 require('./models/User'); 
 require('./models/Survey');
 require('./services/passport');
+
+const seedDB = require('./seeds');
+seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
@@ -29,7 +32,7 @@ app.use(
   );
   //PASPORT CONFIG
 app.use(require("express-session")({
-    secret: "Once again Rusty wins cutest dog!",
+    secret: "Alex rules this stuff!",
     resave: false,
     saveUninitialized: false
 }));
@@ -41,7 +44,8 @@ require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
 require('./routes/apiRoute')(app);
-require('./routes/blogRoute')(app);
+require('./routes/blogRoutes')(app);
+require('./routes/commentRoutes')(app);
 
 
 if (process.env.NODE_ENV === 'production') {
@@ -56,6 +60,9 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+
+
+
 //this is for server
 
 const PORT = process.env.PORT || 5000;
