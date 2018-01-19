@@ -15,7 +15,7 @@ class ShowBlogPage extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${URL_BLOG}?id=${this.props.match.params.id}`)
+        axios.get(`${URL_BLOG}/${this.props.match.params.id}`)
             .then(response => response.json())
             .then(json => {
                 this.setState({data: json})
