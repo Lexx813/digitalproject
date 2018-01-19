@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Blog = require("./models/Blog");
-const Comment = require("./models/comments");
+
 
 var data = [
   {
@@ -45,21 +45,8 @@ function seedDB() {
               console.log(err)
             } else {
               console.log("added a blog");
-              //create a comment
-              Comment.create({
-                text: "This place is great, but I wish there was internet",
-                author: "Homer"
-              }, function (err, comment) {
-                if (err) {
-                  console.log(err);
-                } else {
-                  blog
-                    .comments
-                    .push(comment);
-                  blog.save();
-                  console.log("Created new comment");
-                }
-              });
+         
+           
             }
           });
       });

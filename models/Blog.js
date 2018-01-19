@@ -14,13 +14,7 @@ var blogSchema = new Schema({
       ref: "User"
     },
     username: String
-  },
-  comments: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Comment"
-    }
-  ]
+  }
 });
 
 

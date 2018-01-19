@@ -7,7 +7,6 @@ const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const expressSanitizer = require("express-sanitizer");
 require('./models/Blog');
-require('./models/comments');
 require('./models/User'); 
 require('./models/Survey');
 require('./services/passport');
@@ -46,7 +45,7 @@ require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
 require('./routes/apiRoute')(app);
 require('./routes/blogRoutes')(app);
-// require('./routes/commentRoutes')(app);
+
 
 
 if (process.env.NODE_ENV === 'production') {

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Blog = require('../models/Blog');
-const Comment = require("../models/comments");
 const requireLogin = require('../middlewares/requireLogin');
 
 
@@ -25,7 +24,7 @@ module.exports = app => {
 
   //----->>>> GET BLOG <<<---------
   app.get('/api/blogs/:_id', (req, res) => {
-    Blog.findById(req.params._id).populate('comments').exec(function(err, foundBlog){
+    Blog.findById(req.params._id,(err, foundBlog) =>{
       if(err){
         console.log(err);
       }else{
