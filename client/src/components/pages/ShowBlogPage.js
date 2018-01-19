@@ -10,7 +10,13 @@ class ShowBlogPage extends Component {
         super(props)
 
         this.state = {
-            data: []
+            data: [{
+                _id:'',
+                name:'',
+                title:'',
+                image:'',
+                body:''
+            }]
         }
     }
 
@@ -27,8 +33,8 @@ class ShowBlogPage extends Component {
 
     render() {
         return (
-            <div className="blog">
-     
+            <div key={this.data._id} className="blog">
+               {this.state.data}
             </div>
         )
     }
