@@ -46,7 +46,7 @@ require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
 require('./routes/apiRoute')(app);
 require('./routes/blogRoutes')(app);
-require('./routes/commentRoutes')(app);
+// require('./routes/commentRoutes')(app);
 
 
 if (process.env.NODE_ENV === 'production') {

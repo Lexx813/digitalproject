@@ -1,6 +1,6 @@
-var mongoose = require("mongoose");
-var Blog = require("./models/Blog");
-var Comment = require("./models/comments");
+const mongoose = require("mongoose");
+const Blog = require("./models/Blog");
+const Comment = require("./models/comments");
 
 var data = [
   {
