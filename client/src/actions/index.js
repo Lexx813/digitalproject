@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {FETCH_USER, FETCH_SURVEYS, FETCH_BLOG, FETCH_BLOGS, FETCH_COMMENTS} from './types';
+import {FETCH_USER, FETCH_SURVEYS,  FETCH_BLOGS, FETCH_COMMENTS} from './types';
 
 
 
@@ -52,10 +52,7 @@ export const fetchBlogs = () => async dispatch => {
   const res = await axios.get('/api/blogs');
   dispatch({type: FETCH_BLOGS, payload: res.data});
 };
-export const fetchBlog = () => async dispatch => {
-  const res = await axios.get('/api/blogs/:_id');
-  dispatch({type: FETCH_BLOG, payload: res.data});
-};
+
 
 
 // ///////////////////////////////////////// //////BLOGS COMMENT ACTIONS
