@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {FETCH_USER, FETCH_SURVEYS,  FETCH_BLOGS} from './types';
+import {FETCH_USER, FETCH_SURVEYS, FETCH_BLOGS, ADD_BLOG, REMOVE_BLOG, EDIT_BLOG} from './types';
 
 
 
@@ -42,17 +42,29 @@ export const fetchSurveys = () => async dispatch => {
 ///////////////////////////////////////////
 
 export const submitBlog = (values, history) => async dispatch => {
-  const res = await axios.post('/api/blogs', values);
+  const res = await axios.post('/api/blog', values);
 
-  history.push('/blogs');
+  
+  dispatch({type: ADD_BLOG, payload: res.data});
   dispatch({type: FETCH_USER, payload: res.data});
 };
 
 export const fetchBlogs = () => async (dispatch,getState) => {
     const blogs = getState().blogs;
     if (blogs.length) return;
-  const res = await axios.get('/api/blogs');
+  const res = await axios.get('/api/blog');
   dispatch({type: FETCH_BLOGS, payload: res.data});
+};
+
+
+export const editBlog = () => async dispatch => {
+  const res = await axios.put('/api/blog/:_id');
+  dispatch({type: EDIT_BLOG, payload: res.data});
+};
+
+export const removeBlog = () =>  async dispatch => {
+const res = await axios.delete('/api/blog/:_id');
+dispatch({type: REMOVE_BLOG, payload: res.data});
 };
 
 

@@ -6,13 +6,13 @@ const bodyParser =  require('body-parser');
 const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const expressSanitizer = require("express-sanitizer");
-require('./models/Blog');
-require('./models/User'); 
+require("./models/User");
+require('./models/Blog'); 
 require('./models/Survey');
 require('./services/passport');
 
 const seedDB = require('./seeds');
-// seedDB();
+seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
@@ -31,11 +31,7 @@ app.use(
     })
   );
   //PASPORT CONFIG
-app.use(require("express-session")({
-    secret: "Alex rules this stuff!",
-    resave: false,
-    saveUninitialized: false
-}));
+
 
   app.use(passport.initialize());
   app.use(passport.session());
@@ -43,7 +39,6 @@ app.use(require("express-session")({
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
-require('./routes/apiRoute')(app);
 require('./routes/blogRoutes')(app);
 
 

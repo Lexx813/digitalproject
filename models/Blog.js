@@ -9,13 +9,13 @@ var blogSchema = new Schema({
   description:String,
   image: String,
   body: String,
-  author: {
-    id: {
+  _user: {
+    
       type: mongoose.Schema.Types.ObjectId,
       ref: "User"
     },
-    username: String
-  }
+
+  
 });
 
 

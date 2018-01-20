@@ -11,24 +11,27 @@
 
 //LAYOUT
 @import "./layout/grid";
-@import "./layout/_header";
-@import "./layout/_footer";
+@import "./layout/header";
+@import "./layout/footer";
 
 //PAGES
-@import "./pages/_home";
-@import "./pages/_login";
-@import "./pages/_blog";
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/blog";
+@import "./pages/dashboard";
 
 
 //Components
 @import "./components/_feature-box";
 @import "./components/_button";
 @import "./components/_card";
+@import "./components/_form";
 @import "./components/_listings";
 @import "./components/_bg-video";
 @import "./components/_composition";
 @import "./components/_blogslist";
 @import "./components/_blogslider";
+@import "./components/_surveylist";
 
 
 

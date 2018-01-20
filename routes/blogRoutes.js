@@ -10,7 +10,7 @@ module.exports = app => {
 
   //CREATE - add new Blog to DB
   app
-    .post("/api/blogs", function (req, res) {
+    .post("/api/blog", function (req, res) {
       var blog = req.body;
       Blog.create(blog, function (err, blogs) {
         if (err) {
@@ -23,7 +23,7 @@ module.exports = app => {
 
 
   //----->>>> GET BLOG <<<---------
-  app.get('/api/blogs/:_id', (req, res) => {
+  app.get('/api/blog/:_id', (req, res) => {
     Blog.findById(req.params._id,(err, foundBlog) =>{
       if(err){
         console.log(err);
@@ -34,7 +34,7 @@ module.exports = app => {
     })
   });
   //----->>>> GET BLOGS <<<---------
-  app.get("/api/blogs", (req, res) => {
+  app.get("/api/blog", (req, res) => {
     Blog
       .find(function (err, blogs) {
         if (err) {
@@ -57,7 +57,7 @@ app.get('/blogs/:_id/edit', (req,res) => {
 
 
   //---->>> UPDATE BLOGS <<<------
-app.put("/api/blogs/:_id", function (req, res) {
+app.put("/api/blog/:_id", function (req, res) {
   var blog = req.body;
   var query = req.params._id;
   // if the field doesn't exist $set will set a new field
@@ -86,7 +86,7 @@ app.put("/api/blogs/:_id", function (req, res) {
 
   // DESTROY blog ROUTE
   app
-    .delete("/api/blogs/:_id", function (req, res) {
+    .delete("/api/blog/:_id", function (req, res) {
       Blog
         .findByIdAndRemove(req.params._id, function (err) {
           if (err) {

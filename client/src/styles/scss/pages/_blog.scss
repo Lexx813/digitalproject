@@ -28,4 +28,16 @@
   left: 0;
   padding: 10rem;
   text-align: center;
+
+  &__form{
+    padding: 15rem;
+  }
+  &__post{
+    padding-block-end: 5rem;
+    background-color: black;
+  }
+}
+
+form a {
+  padding-left: 2rem;
 }
