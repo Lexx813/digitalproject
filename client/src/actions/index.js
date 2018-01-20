@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {FETCH_USER, FETCH_SURVEYS,  FETCH_BLOGS, FETCH_COMMENTS} from './types';
+import {FETCH_USER, FETCH_SURVEYS,  FETCH_BLOGS} from './types';
 
 
 
@@ -48,26 +48,13 @@ export const submitBlog = (values, history) => async dispatch => {
   dispatch({type: FETCH_USER, payload: res.data});
 };
 
-export const fetchBlogs = () => async dispatch => {
+export const fetchBlogs = () => async (dispatch,getState) => {
+    const blogs = getState().blogs;
+    if (blogs.length) return;
   const res = await axios.get('/api/blogs');
   dispatch({type: FETCH_BLOGS, payload: res.data});
 };
 
 
-
-// ///////////////////////////////////////// //////BLOGS COMMENT ACTIONS
-// /////////////////////////////////////////
-
-export const submitComment = (values, history) => async dispatch => {
-  const res = await axios.post('/api/comments', values);
-
-  history.push('/blogs');
-  dispatch({type: FETCH_USER, payload: res.data});
-};
-
-export const fetchComments = () => async dispatch => {
-  const res = await axios.get('/api/comments');
-  dispatch({type: FETCH_COMMENTS, payload: res.data});
-};
 
 

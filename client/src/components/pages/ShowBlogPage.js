@@ -1,47 +1,34 @@
-import React, {Component} from 'react';
-import axios from 'axios';
-
-
-
-const URL_BLOG = '/api/blogs/'
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class ShowBlogPage extends Component {
-    constructor(props) {
-        super(props)
+  renderBlog = () => {
+    const blog = this.props.blogs.find(
+      ({ _id }) => _id === this.props.match.params.id
+    );
+    if (!blog) return;
 
-        this.state = {
-            data: [{
-                _id:'',
-                name:'',
-                title:'',
-                image:'',
-                body:''
-            }]
-        }
-    }
+    return <div key={blog._id}>
+        <h2 className="heading-secondary">{blog.title}</h2>
+        <h3 className="heading-primary--sub">{blog.description}</h3>
+        <div className="">
+          <img className="" src={blog.image} alt="" />
+        </div>
+        <div className="">
+          <p className="paragraph">{blog.body}</p>
+        </div>
+      </div>;
+  };
 
-    componentDidMount() {
-        axios.get(`${URL_BLOG}/${this.props.match.params.id}`)
-            .then(response => response.json())
-            .then(json => {
-                this.setState({data: json})
-            })
-    }
-
-
-
-
-    render() {
-        return (
-            <div key={this.data._id} className="blog">
-               {this.state.data}
-            </div>
-        )
-    }
-
+  render() {
+    return (
+      <div className="blog">
+        {this.renderBlog()}
+      </div>
+    );
+  }
 }
 
+const mapStateToProps = ({ blogs }) => ({ blogs });
 
-
-
-export default ShowBlogPage;
+export default connect(mapStateToProps, null)(ShowBlogPage);

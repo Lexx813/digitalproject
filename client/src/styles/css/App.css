@@ -357,6 +357,12 @@ footer {
     font-size: 4rem;
     color: #fff; }
 
+.blog {
+  top: 0;
+  left: 0;
+  padding: 10rem;
+  text-align: center; }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;

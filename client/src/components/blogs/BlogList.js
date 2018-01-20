@@ -15,8 +15,7 @@ return this.props.blogs.map(blogs => {
     <div className="bloglist" key={blogs._id}>
       <img className="bloglist__img" src={blogs.image} alt="test"/>
       <h2 className="bloglist__title">{blogs.title}</h2>
-      <p className="bloglist__body">{blogs.body}</p>
-      <p className="bloglist__body">{blogs._id}</p>
+      <h3 className="bloglist__body">{blogs.description}</h3>
        <Link to={`/blog/${blogs._id}`} className="btn-text">Read more &rarr;</Link>
     </div> 
   )

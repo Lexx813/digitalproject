@@ -12,7 +12,7 @@ require('./models/Survey');
 require('./services/passport');
 
 const seedDB = require('./seeds');
-seedDB();
+// seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;

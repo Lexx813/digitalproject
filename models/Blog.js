@@ -6,6 +6,7 @@ var blogSchema = new Schema({
 
   name: String,
   title: String,
+  description:String,
   image: String,
   body: String,
   author: {
