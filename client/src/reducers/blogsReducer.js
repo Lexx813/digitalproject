@@ -12,15 +12,15 @@ export default function(state = [], action) {
     default:
       return state;
     case POST_BLOG:
-      return [...state, action.blog];
+      return [...state, action.blogs];
     case REMOVE_BLOG:
       return state.filter(({ _id }) => _id !== action._id);
     case EDIT_BLOG:
-      return state.map(blog => {
-        if (blog._id === action._id) {
-          return { ...blog, ...action.updates };
+      return state.map(blogs => {
+        if (blogs._id === action._id) {
+          return { ...blogs, ...action.updates };
         } else {
-          return blog;
+          return blogs;
         }
       });
   }

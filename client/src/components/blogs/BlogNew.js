@@ -17,7 +17,7 @@ class BlogNew extends Component{
 
   onSubmit(values) {
   this.props.postBlog(values, () => {
-      this.props.history.push("/blog");
+   
   });
   }
 

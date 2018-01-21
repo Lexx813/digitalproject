@@ -363,9 +363,9 @@ footer {
   padding: 10rem;
   text-align: center; }
   .blog__form {
-    padding: 15rem; }
+    padding: 20rem; }
   .blog__post {
-    padding-block-end: 5rem;
+    padding: 10rem;
     background-color: black; }
 
 form a {
