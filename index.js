@@ -11,8 +11,8 @@ require('./models/Blog');
 require('./models/Survey');
 require('./services/passport');
 
-const seedDB = require('./seeds');
-seedDB();
+// const seedDB = require('./seeds');
+// seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
@@ -31,6 +31,11 @@ app.use(
     })
   );
   //PASPORT CONFIG
+  app.use(require("express-session")({
+      secret: "Once again Rusty wins cutest dog!",
+      resave: false,
+      saveUninitialized: false
+    }));
 
 
   app.use(passport.initialize());

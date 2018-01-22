@@ -8,21 +8,22 @@ module.exports = app => {
 
   //---->>> POST BLOGS <<<-----
 
-  //CREATE - add new Blog to DB
+ 
   app
-    .post("/api/blog", function (req, res) {
+    .post("/api/blog",  (req, res) => {
       var blog = req.body;
-      Blog.create(blog, function (err, blogs) {
+    Blog.create(blog, async (err, blogs) => {
         if (err) {
           throw err;
         }
-        res.json(blogs);
+     await   res.json(blogs);
+
       });
     });
 
 
 
-  //----->>>> GET BLOG <<<---------
+  //----->>>> GET BLOG BY ID <<<---------
   app.get('/api/blog/:_id', (req, res) => {
     Blog.findById(req.params._id,(err, foundBlog) =>{
       if(err){
@@ -34,13 +35,14 @@ module.exports = app => {
     })
   });
   //----->>>> GET BLOGS <<<---------
-  app.get("/api/blog", (req, res) => {
+  app.get("/api/blog",  (req, res) => {
     Blog
-      .find(function (err, blogs) {
+      .find(async (err, blogs) => {
         if (err) {
           throw err;
         }
-        res.json(blogs);
+    await  res.json(blogs);
+        console.log(blogs);
       });
   });
 
