@@ -6,7 +6,9 @@ import { fetchBlogs } from "../../actions";
 class BLogList extends Component {
   componentWillMount() {
     this.props.fetchBlogs();
+  
   }
+
 
   renderBlogs() {
     return this.props.blogs.map(blogs => {

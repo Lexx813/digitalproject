@@ -18,10 +18,10 @@ class BlogNew extends Component{
   }
 
   onSubmit(values, history) {
-  this.props.history.push('/blog');
+  
    
   this.props.postBlog(values);
- 
+ this.props.history.push("/blog");
   }
 
   render(){

@@ -42,14 +42,12 @@ export const fetchSurveys = () => async dispatch => {
 
 export const postBlog = (values, history) => async dispatch => {
   const res = await axios.post("/api/blog", values);
- 
-  
+
   dispatch({ type: FETCH_USER, payload: res.data });
 };
 
 export const fetchBlogs = () => async (dispatch, getState) => {
-  const blogs = getState().blogs;
-  if (blogs.length) return;
+
   const res = await axios.get("/api/blog");
   dispatch({ type: FETCH_BLOGS, payload: res.data });
 };
