@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Field, reduxForm} from 'redux-form';
 import { Link }from 'react-router-dom';
 import  { connect } from 'react-redux';
+import { withRouter } from "react-router-dom";
 import {postBlog} from '../../actions';
+
 
 
 
@@ -15,10 +17,11 @@ class BlogNew extends Component{
     </div>;
   }
 
-  onSubmit(values) {
-  this.props.postBlog(values, () => {
+  onSubmit(values, history) {
+  this.props.history.push('/blog');
    
-  });
+  this.props.postBlog(values);
+ 
   }
 
   render(){
@@ -90,5 +93,5 @@ export default reduxForm({
   validate,
   form:'BlogNewForm'
 })(
- connect(null,{ postBlog })(BlogNew)
+ connect(null,{ postBlog })(withRouter(BlogNew))
 );

@@ -3,7 +3,6 @@ import {
   FETCH_USER,
   FETCH_SURVEYS,
   FETCH_BLOGS,
-
   REMOVE_BLOG,
   EDIT_BLOG
 } from "./types";
@@ -43,8 +42,8 @@ export const fetchSurveys = () => async dispatch => {
 
 export const postBlog = (values, history) => async dispatch => {
   const res = await axios.post("/api/blog", values);
-
- history.push("/blog");
+ 
+  
   dispatch({ type: FETCH_USER, payload: res.data });
 };
 
