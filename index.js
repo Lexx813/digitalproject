@@ -6,7 +6,9 @@ const bodyParser =  require('body-parser');
 const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const expressSanitizer = require("express-sanitizer");
-require("./models/User");
+const morgan  = require('morgan');
+require('./models/Admin');
+require('./models/User');
 require('./models/Blog'); 
 require('./models/Survey');
 require('./services/passport');
@@ -18,11 +20,14 @@ mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 
+
+
 const app = express();
+
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 
-
+app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(
     cookieSession({
@@ -30,12 +35,7 @@ app.use(
       keys: [keys.cookieKey]
     })
   );
-  //PASPORT CONFIG
-  app.use(require("express-session")({
-      secret: "Once again Rusty wins cutest dog!",
-      resave: false,
-      saveUninitialized: false
-    }));
+
 
 
   app.use(passport.initialize());

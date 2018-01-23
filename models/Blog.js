@@ -8,12 +8,8 @@ var blogSchema = new Schema({
   title: String,
   description:String,
   image: String,
-  body: String,
-  _user: {
-    
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
-    },
+  body: String
+
 
   
 });
