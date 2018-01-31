@@ -1,6 +1,5 @@
 const passport = require('passport');
 const mongoose = require('mongoose');
-const Authentication = require("../controllers/authentication");
 
 
 
@@ -8,8 +7,6 @@ const Authentication = require("../controllers/authentication");
 module.exports = app => {
 
 
-  
-  app.post("/signup", Authentication.signup);
 
 
 

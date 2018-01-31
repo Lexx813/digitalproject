@@ -341,35 +341,46 @@ footer {
 
 .blog-box {
   height: 90vh;
-  min-height: 600px;
+  min-height: 700px;
   width: 100%;
   background-size: cover !important;
   background-position: center center !important;
   position: relative;
   text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
+  padding-top: 8rem; }
   .blog-box__container {
     color: #fff;
     margin-right: auto;
     margin-left: auto; }
   .blog-box__heading {
-    font-size: 4rem;
+    padding-top: 20rem;
     color: #fff; }
 
-.blog {
+.showblog {
   top: 0;
   left: 0;
-  padding: 10rem;
+  padding: 5rem;
   text-align: center; }
-  .blog__form {
-    padding: 20rem; }
-  .blog__post {
+  .showblog__img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  .showblog__body {
+    text-align: center;
     padding: 10rem;
-    background-color: black; }
+    background-color: #d5d8d6;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
-form a {
-  padding-left: 2rem; }
+.blogpost {
+  background-color: #d5d8d6; }
+  .blogpost__form {
+    align-content: center;
+    padding: 20rem;
+    padding-left: 50rem; }
+  .blogpost__right {
+    padding-left: 5rem; }
+  .blogpost__left {
+    padding-right: 5rem; }
 
 .dashboard {
   padding: 10rem;
@@ -597,88 +608,83 @@ form a {
       .card__price-value {
         font-size: 4rem; } }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 50%;
-  display: block;
-  transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #3c4353; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form__radio-group {
-  width: 49%;
-  display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 2rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 4.5rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #3c4353;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -.4rem; }
-  .form__radio-button::after {
-    content: "";
+.form {
+  align-content: center; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rbga(#fff, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 70%;
     display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #3c4353;
+    transition: all .3s; }
+    @media only screen and (max-width: 56.25em) {
+      .form__input {
+        width: 100%; } }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #FF0000; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    .form__input::-webkit-input-placeholder {
+      color: #999; }
+  .form__label {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
     opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  .form__radio-group {
+    width: 49%;
+    display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .form__radio-group {
+        width: 100%;
+        margin-bottom: 2rem; } }
+  .form__radio-input {
+    display: none; }
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem; }
+  .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #3c4353;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem; }
+    .form__radio-button::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #3c4353;
+      opacity: 0;
+      transition: opacity .2s; }
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
 
 .listings {
   top: 0;
@@ -765,11 +771,24 @@ form a {
 .bloglist {
   top: 0;
   left: 0;
-  text-align: center;
-  padding-top: 10rem; }
+  text-align: center; }
+  .bloglist__container {
+    background-color: #d5d8d6; }
+  .bloglist__title {
+    padding: 4rem; }
+  .bloglist__desc {
+    padding-top: 3rem; }
+  .bloglist__link {
+    padding: 2rem; }
   .bloglist__img {
-    width: 600px;
-    height: 500px; }
+    width: 900px;
+    height: 600px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    .bloglist__img:hover {
+      outline: 1rem solid #000;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
 
 /*===================================
                 SLIDER

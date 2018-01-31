@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 const Cards = () => {
@@ -109,8 +110,8 @@ const Cards = () => {
                     </div>
                 </div>
 
-                <div className="u-center-text u-margin-top-huge">
-                    <a href="" className="btn btn--green">Discover all our packages</a>
+                <div className="u-center-text ">
+                    <Link to ="/services" className="btn btn--primary">Discover all our packages</Link>
                 </div>
     </div>
   )

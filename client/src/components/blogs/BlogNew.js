@@ -16,6 +16,15 @@ class BlogNew extends Component{
       {field.meta.touched ? field.meta.error : ''}
     </div>;
   }
+ renderTextArea(field){
+  return <div>
+      <label>Content</label>
+      <div>
+        <textarea {...field.input}  rows="10" cols="68" />
+        {field.meta.touched ? field.meta.error : ""}
+      </div>
+    </div>;
+ }
 
   onSubmit(values, history) {
   
@@ -28,8 +37,8 @@ class BlogNew extends Component{
 
     const { handleSubmit } = this.props;
     return(
-      <div className="blog__post">
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))} className="form">
+      <div className="blogpost">
+      <form onSubmit={handleSubmit(this.onSubmit.bind(this))} className="blogpost__form form">
         <Field
           label="Name"
           name="name"
@@ -53,12 +62,12 @@ class BlogNew extends Component{
         <Field
           label="Blog content"
           name="body"
-          component={this.renderField}
+          component={this.renderTextArea}
          />
-         <button type="submit" className="btn  btn--white">
+         <button type="submit" className="btn blogpost__left btn--white">
          Submit
          </button>
-         <Link to="/dashboard" className="btn btn--primary"> 
+         <Link to="/dashboard" className="btn blogpost__right btn--primary"> 
          Cancel
          </Link>
       </form>

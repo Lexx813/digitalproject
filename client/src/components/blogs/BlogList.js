@@ -14,10 +14,10 @@ class BLogList extends Component {
     return this.props.blogs.map(blogs => {
       return (
         <div className="bloglist" key={blogs._id}>
-          <img className="bloglist__img" src={blogs.image} alt="test" />
-          <h2 className="bloglist__title">{blogs.title}</h2>
-          <h3 className="bloglist__body">{blogs.description}</h3>
-          <Link to={`/blog/${blogs._id}`} className="btn-text">
+          <h2 className="bloglist__title heading-secondary">{blogs.title}</h2>
+          <img className="bloglist__img " src={blogs.image} alt="test" />
+          <h3 className="bloglist__desc">{blogs.description}</h3>
+          <Link to={`/blog/${blogs._id}`} className="btn-text bloglist__link">
             Read more &rarr;
           </Link>
         </div>
@@ -26,9 +26,10 @@ class BLogList extends Component {
   }
   render() {
     return (
-      <div className="row">
-        <div className="col-2-of-4">{this.props.blogs.image}</div>
-        <div className="col-2-of-4">{this.renderBlogs()}</div>
+      <div className = "bloglist__container">
+        <div className="row"> 
+          <div >{this.renderBlogs()}</div>
+        </div>
       </div>
     );
   }

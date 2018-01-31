@@ -2,11 +2,33 @@
   top: 0;
   left: 0;
   text-align: center;
-  padding-top: 10rem;
+ 
+   &__container {
+     background-color: $light-grey;
+   }
+
+  &__title{
+    padding: 4rem;
+  }
+
+  &__desc {
+    padding-top: 3rem;
+  }
+
+  &__link {
+    padding: 2rem;
+  }
  
 
   &__img{
-    width: 600px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
+   box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+           &:hover {
+             outline: 1rem solid $color-black;
+             transform: scale(1.05) translateY(-.5rem);
+             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+             z-index: 20;
+           }
   }
 }

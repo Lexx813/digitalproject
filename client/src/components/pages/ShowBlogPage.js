@@ -14,22 +14,20 @@ class ShowBlogPage extends Component {
     );
     if (!blog) return;
 
-    return (
-      <div key={blog._id}>
-        <h2 className="heading-secondary">{blog.title}</h2>
-        <h3 className="heading-primary--sub">{blog.description}</h3>
+    return <div key={blog._id}>
         <div className="">
-          <img className="" src={blog.image} alt="" />
+          <img className="showblog__img" src={blog.image} alt="" />
         </div>
-        <div className="">
-          <p className="paragraph">{blog.body}</p>
+        <div className="showblog__body">
+          <h2 className="heading-secondary">{blog.title}</h2>
+          <h3 className="heading-primary--sub">{blog.description}</h3>
+          <p className="paragraph showblog__body">{blog.body}</p>
         </div>
-      </div>
-    );
+      </div>;
   };
 
   render() {
-    return <div className="blog">{this.props.blogs.length && this.renderBlog()}</div>;
+    return <div className="showblog">{this.props.blogs.length && this.renderBlog()}</div>;
   }
 }
 

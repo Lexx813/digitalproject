@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 var blogSchema = new Schema({
-
   name: String,
   title: String,
-  description:String,
+  description: String,
   image: String,
-  body: String
-
-
-  
+  body: String,
+  _user: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  }
 });
 
 

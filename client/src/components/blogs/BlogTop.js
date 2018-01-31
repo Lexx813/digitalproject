@@ -15,7 +15,7 @@ const BlogTop = () => {
     </div>
        <div className = "blog-box heading-primary" >
     <div className="header-box__container">
-       <h1 className = " heading-primary--main" > 
+       <h1 className = "blog-box__heading heading-primary--main" > 
        {blog}      
        </h1>
     <p className = "heading-primary--sub" > 

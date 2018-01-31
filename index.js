@@ -7,14 +7,14 @@ const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const expressSanitizer = require("express-sanitizer");
 const morgan  = require('morgan');
-require('./models/Admin');
+
 require('./models/User');
 require('./models/Blog'); 
 require('./models/Survey');
 require('./services/passport');
 
-// const seedDB = require('./seeds');
-// seedDB();
+const seedDB = require('./seeds');
+seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
@@ -67,4 +67,4 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-console.log('SERVER STARTED');
+console.log(`SERVER STARTED AT PORT${PORT}`);
