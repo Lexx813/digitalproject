@@ -13,6 +13,8 @@ import reducers from './reducers';
 import axios from 'axios';
 window.axios = axios;
 
+// store
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers, {},composeEnhancers(applyMiddleware(reduxThunk, promise)),
 );
