@@ -17,10 +17,10 @@ class BlogNew extends Component{
     </div>;
   }
  renderTextArea(field){
-  return <div>
-      <label>Content</label>
-      <div>
-        <textarea {...field.input}  rows="10" cols="68" />
+  return <div className="form__group">
+      <label className="form__label">Content</label>
+      <div >
+        <textarea className="form__input" {...field.input} rows="10" cols="68" />
         {field.meta.touched ? field.meta.error : ""}
       </div>
     </div>;
