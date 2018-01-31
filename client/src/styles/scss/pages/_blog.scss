@@ -1,7 +1,7 @@
 .blog-box {
 
-  height: 90vh;
-  min-height: 700px;
+  height: 570px;
+  
   width: 100%;
   background-size: cover !important;
   background-position: center center !important;
@@ -15,7 +15,7 @@
     margin-left: auto;
   }
   &__heading {
-    padding-top: 20rem;
+    padding-top: 15rem;
     color: $color-white;
   }
 
