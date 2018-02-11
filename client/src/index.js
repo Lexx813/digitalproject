@@ -6,7 +6,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import promise from 'redux-promise';
 
-import App from'./components/App';
+import AppRouter from'./router/routes';
 import reducers from './reducers';
 
 // dev only
@@ -20,7 +20,7 @@ const store = createStore(reducers, {},composeEnhancers(applyMiddleware(reduxThu
 );
 
 ReactDOM.render(
- <Provider store={store}><App /></Provider>, 
+ <Provider store={store}><AppRouter /></Provider>, 
  document.querySelector('#root'));
 
 //  console.log('STRIPE KEY IS', process.env.REACT_APP_STRIPE_KEY);

@@ -5,8 +5,8 @@ const Blog = require("./models/Blog");
 var data = [
   {
     name: "sumya ung",
-    title: "who knows",
-    description: "this is the description",
+    title: "Aint no mountain High enough",
+    description: "this is the description of these mountains how beautiful",
     image:
       "https://images.unsplash.com/photo-1495112398151-7eedd7c2e7e8?auto=format&fit=crop&w=889&q=80",
     body:
@@ -45,8 +45,8 @@ var data = [
   },
   {
     name: "sum dum foo",
-    title: "who knows",
-    description: "this is the description 2",
+    title: "The road to enlightenment!",
+    description: "The city is the best place for anybody to live",
     image:
       "https://images.unsplash.com/photo-1473042904451-00171c69419d?auto=format&fit=crop&w=775&q=80",
     body:

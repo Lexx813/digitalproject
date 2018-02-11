@@ -1,20 +1,19 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cookieSession = require('cookie-session');
-const passport = require('passport');
+const cookieParser = require("cookie-parser");
 const bodyParser =  require('body-parser');
 const keys = require('./config/keys');
 const methodOverride = require("method-override");
-const expressSanitizer = require("express-sanitizer");
 const morgan  = require('morgan');
 
-require('./models/User');
+
 require('./models/Blog'); 
 require('./models/Survey');
-require('./services/passport');
+require('./models/User');
 
-const seedDB = require('./seeds');
-seedDB();
+
+// const seedDB = require('./seeds');
+// seedDB();
  
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
@@ -23,24 +22,15 @@ mongoose.connect(keys.mongoURI);
 
 
 const app = express();
+app.use(bodyParser.json());
+app.use(cookieParser());
 
-app.use(expressSanitizer());
-app.use(methodOverride("_method"));
 
 app.use(morgan('combined'));
-app.use(bodyParser.json());
-app.use(
-    cookieSession({
-      maxAge: 30 * 24 * 60 *60 *1000,
-      keys: [keys.cookieKey]
-    })
-  );
 
 
 
-  app.use(passport.initialize());
-  app.use(passport.session());
-
+  
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
@@ -60,11 +50,12 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+ 
 
 
 
 //this is for server
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT);
-console.log(`SERVER STARTED AT PORT${PORT}`);
+console.log(`SERVER STARTED AT PORT ${PORT}`);

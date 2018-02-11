@@ -784,6 +784,10 @@ footer {
     height: 600px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
     .bloglist__img:hover {
+      transition: all .4s ease;
+      -moz-transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+      -o-transition: all .4s ease;
       outline: 1rem solid #000;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);

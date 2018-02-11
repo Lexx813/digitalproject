@@ -2,7 +2,7 @@ const _ = require("lodash");
 const Path = require("path-parser");
 const { URL } = require("url");
 const mongoose = require("mongoose");
-const requireLogin = require("../middlewares/requireLogin");
+
 
 const Mailer = require("../services/Mailer");
 const surveyTemplate = require("../services/emailTemplates/surveyTemplate");
@@ -10,7 +10,7 @@ const surveyTemplate = require("../services/emailTemplates/surveyTemplate");
 const Survey = mongoose.model("surveys");
 
 module.exports = app => {
-  app.get("/api/surveys", requireLogin, async (req, res) => {
+  app.get("/api/surveys",  async (req, res) => {
     const surveys = await Survey.find({ _user: req.user.id }).select({
       recipients: false
     });
@@ -61,7 +61,7 @@ module.exports = app => {
     res.send({});
   });
 
-  app.post("/api/surveys", requireLogin,  async (req, res) => {
+  app.post("/api/surveys",   async (req, res) => {
     const { title, subject, body, recipients } = req.body;
 
     const survey = new Survey({
