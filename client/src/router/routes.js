@@ -44,7 +44,7 @@ class AppRouter extends Component {
             <Route exact path="/contact" component={Auth(ContactPage,null)} />
             <Route exact path="/login" component={Auth(LoginPage)} />
             <Route exact path="/logout" component={Auth(Logout,true)} />
-            <Route exact path="/register" component={Auth(Register,null)} />
+            <Route exact path="/register" component={Auth(Register,true)} />
             <Route path="/user" exact component={Auth(User, true)} />
             <Route path="/surveys/new" component={Auth(SurveyNew,true)} />
             <Route exact path="/dashboard" component={Auth(Dashboard,true)} />
