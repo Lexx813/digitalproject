@@ -33,10 +33,11 @@ class LoginPage extends Component {
     let user = this.props.user;
     return (
       <div className="login">
+      <div className="login__box">
+      <div className="login__inputs">
         <form className="form" onSubmit={this.submitForm}>
-          <h2>Log in here</h2>
-          <div className="form_group">
-          <label className="form__label">Enter Email</label>
+          <h2 className="heading-tertiary login__here">Log in here</h2>
+          <div className="form_group login__input">      
             <input className="form__input"
               type="email"
               placeholder="enter email"
@@ -45,7 +46,6 @@ class LoginPage extends Component {
             />
           </div>
           <div className="form__group">
-          <label className="form__label">Enter Password</label>
             <input className="form__input"
               type="password"
               placeholder="enter  password"
@@ -53,12 +53,15 @@ class LoginPage extends Component {
               onChange={this.handleInputPassword}
             />
           </div>
+          <div className="login__btn">
           <button className="btn btn--primary" type="submit">Log in</button>
-
-          <div className="error">
+           </div>
+          <div className="login__error">
             {user.login ? <div>{user.login.message}</div> : null}
           </div>
         </form>
+        </div>
+        </div>
       </div>
     );
   }

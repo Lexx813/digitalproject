@@ -1,5 +1,39 @@
 .login {
-  padding-top: 10rem;
-  height: 900%;
+
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  height:560px;
+  justify-content: space-around;
+  &__box{
+    width: 30rem;
+    background: $light-grey;
+  align-content: center;
+  justify-content: center;
+  }
+
+  &__box{
+   
+    padding-left: 5rem;
+  }
+  &__here{
+    padding-top: 2rem;
+    padding-right: 5rem;
+    text-align: center;
+  }
+  &__input{
+    padding-bottom: 2rem;
+  }
+  &__btn{
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    text-align: center;
+  }
+  &__error{
+    font-size: 1.7rem;
+    color: red;
+    text-align: center;
+    padding-right: 3.5rem;
+  }
 
 } 

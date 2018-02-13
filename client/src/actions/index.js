@@ -57,12 +57,14 @@ export function userRegister(user, userList) {
   };
 }
 
+
 /////////////AUTH ACTIONS
 export const fetchUser = () => async dispatch => {
-  const res = await axios.get("/api/users");
+  const res = await axios.get('/api/current_user');
 
   dispatch({ type: FETCH_USER, payload: res.data });
 };
+
 
 ////////STRIPE API
 export const handleToken = token => async dispatch => {

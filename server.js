@@ -6,15 +6,18 @@ const keys = require('./config/keys');
 const methodOverride = require("method-override");
 const morgan  = require('morgan');
 
-
+// MODELS //
 require('./models/Blog'); 
 require('./models/Survey');
 require('./models/User');
 
 
-// const seedDB = require('./seeds');
-// seedDB();
+//SEEDING THE DATABASE //
+const seedDB = require('./seeds');
+seedDB();
  
+
+// MONGOOSE SETUP //
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
@@ -29,8 +32,7 @@ app.use(cookieParser());
 app.use(morgan('combined'));
 
 
-
-  
+// ROUTES //
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveryRoutes')(app);
@@ -54,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-//this is for server
+//SERVER SETUP//
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);

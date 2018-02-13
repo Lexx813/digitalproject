@@ -1,6 +1,8 @@
-
+import { FETCH_USER } from '../actions/types';
 export default function(state = {}, action) {
   switch (action.type) {
+    case FETCH_USER:
+      return action.payload || false;
     case "USER_LOGIN":
       return { ...state, login: action.payload };
     case "USER_AUTH":

@@ -19,6 +19,8 @@
 @import "./pages/login";
 @import "./pages/blog";
 @import "./pages/dashboard";
+@import "./pages/survey";
+@import "./pages/_profile.scss";
 
 
 //Components
@@ -32,6 +34,7 @@
 @import "./components/_blogslist";
 @import "./components/_blogslider";
 @import "./components/_surveylist";
+@import "./components/_loader.scss";
 
 
 
