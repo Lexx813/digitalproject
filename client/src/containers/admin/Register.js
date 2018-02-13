@@ -113,7 +113,7 @@ class Register extends PureComponent {
             />
           </div>
 
-          <button type="submit">Add user</button>
+          <button type="submit">Add Admin</button>
           <div className="error">
             {this.state.error}
           </div>
@@ -131,7 +131,7 @@ class Register extends PureComponent {
          </Link>
         </div>
         <div className="current_users">
-          <h4>Current users:</h4>
+          <h4>Current Admins:</h4>
           <table>
             <thead>
               <tr>
