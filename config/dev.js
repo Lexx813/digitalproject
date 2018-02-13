@@ -1,5 +1,5 @@
 module.exports = {
-  mongoURI: "mongodb://lex:dbpassword@ds125716.mlab.com:25716/project",
+  mongoURI: "mongodb://lex:password@ds125716.mlab.com:25716/project",
   stripePublishableKey: "pk_test_kebHchHkAA0o16jIWO7VTCYe",
   stripeSecretKey: "sk_test_rhSjh2KemhZCSNNiVDdBBRGP",
   sendGridKey:

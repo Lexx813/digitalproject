@@ -20,7 +20,7 @@ class LoginPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.user.login.isAuth) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/register");
     }
   }
 
